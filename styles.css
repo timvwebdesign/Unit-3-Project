@@ -1,0 +1,259 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background: rgb(3, 4, 14);
+    color: white;
+    width: 100%;
+    padding: .8em 0 .8em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 320px;
+    max-width: 100%;
+    border-bottom: 5px solid black;
+    margin-bottom: 3px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+
+div {
+    display: inline-block;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.border {
+    border-bottom: 2px solid black;
+    width: 320px;
+}
+
+.intro-info {
+    max-width: 320px;
+    color: #8d99a3;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 320px;
+    margin: 4px 10px 0 10px auto;
+    padding: 12px 20px;
+    background: #f4f7f8;
+    color: #707a83;
+    border-radius: 10px 10px 0 0;
+}
+
+label {
+    color:  #707a83;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+textarea,
+select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 90%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+select {
+    width: 100%;
+}
+
+#zipcode {
+    width: 50%;
+    display: block;
+}
+
+fieldset {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.contact_info {
+    border-bottom: 2px solid black;
+    padding-top: 5px;
+}
+
+input:focus {
+    border: 2px solid rgb(47, 81, 133);
+    border-radius: 8px;
+    transition: ease-in-out .5s;
+}
+
+.required:not(:focus) {
+    font-style:italic;
+    font-family: 'Merriweather', serif;
+    text-align: right;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #a9b5c0;
+    font-family: 'Merriweather', serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #a9b5c0;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #a9b5c0;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #a9b5c0;
+}
+
+input[type="text"].required::-webkit-input-placeholder,
+input[type="email"].required::-webkit-input-placeholder {
+    text-align: right;
+  }
+
+textarea {
+    height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 20px;
+    color: #8a97a0;
+}
+
+/* Create a custom checkbox */
+.checkmark,
+.radio {
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+}
+
+.button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc1c9;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac1c1;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+}
+
+footer {
+    color: #adb8c0;
+    font-size: .8em;
+}
+
+p span {
+    font-style: italic;
+    white-space: pre;
+}
+
+
+@media (min-width: 768px) {
+
+form {
+    width: 748px;
+    max-width: 748px;
+}
+
+.contact-info {
+    display: flex;
+    width: 749px;
+    max-width: 748px;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.border {
+    margin-bottom: 4px;
+}
+
+.label {
+    display: inline-block;
+    width: 150px;
+    margin-right: auto;
+    min-width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+select {
+    max-width: 560px;
+    width: 560px;
+    margin: 0;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 588px;
+    max-width: 588px;
+}
+
+#zipcode {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 70px;
+}
+
+.newsletter {
+    margin-top: 40px;
+}
+
+textarea {
+    width: 735px;
+}
+
+.intro-info {
+    max-width: 768px;
+    width: 768px;
+}
+
+.header {
+    width: 768px;
+}
+
+.border {
+    width: 768px;
+}
+
+}

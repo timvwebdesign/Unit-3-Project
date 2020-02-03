@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Web Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3>THE CODE REVIEW</h3>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h3 class="main_heading">Signup for our newsletter</h3>
+            <p class="intro-info">Get the latest news on how your code is doing right in your inbox</p>
+        </div> <!-- END Sign up -->
+        <div class="border"></div> <!-- border -->
+
+        <form class="form-signup">
+            <fieldset class="contact_info">
+                <legend>Contact Information</legend>
+                <label class="label" for="fullname">Full Name</label>
+                <input class="required" type="text" id="fullname" name="fullname" required placeholder="Required"><br>
+
+                <label class="label" for="email">Email Address</label>
+                <input class="required" type="email" id="email" name="email" required placeholder="Required"><br>
+
+                <label class="label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"><br>
+
+                <label class="label" for="street">Street Address</label>
+                <input type="text" id="street" name="street"><br>
+
+                <label class="label" for="city">City</label>
+                <input type="text" id="city" name="city"><br>
+
+                    <label class="label" for="state">State</label>
+                    <select id="state" name="state">
+                        <option value="0">Choose State</option>
+                        <option value="1">California</option>
+                        <option value="2">Oregon</option>
+                        <option value="3">Washington</option>
+                        <option value="4">Colorado</option>
+                        <option value="5">Arizona</option>
+                        <option value="6">Nevada</option>
+                        <option value="7">Idaho</option>
+                        <option value="8">New Mexico</option>
+                        <option value="9">Wyoming</option>
+                        <option value="10">Montana</option>
+                    </select><br>
+
+                <label class="label" for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="zip"><br>
+            </fieldset>
+
+            <fieldset class="newsletter">
+                <legend>Newsletter</legend>
+                <p>Select the newsletter you would like to recieve</p>
+
+                    <input class="checkmark" type="checkbox" name="html" value="html"> HTML News<br>
+                    <input class="checkmark" type="checkbox" name="css" value="css"> CSS News<br>
+                    <input class="checkmark" type="checkbox" name="javascript" value="javascript"> Javascript News<br>
+
+                <p>Newsletter format</p>
+
+                <input class="radio" type="radio" name="news-type" value="html"> HTML<br>
+                <input class="radio" type="radio" name="news-type" value="plain-text"> Plain text<br>
+
+                <label for="msg">Other topics you'd like to hear about</label>
+                <textarea id="msg" name="other-topics"></textarea>
+            </fieldset>
+
+            <input class="button" type="submit" name="submit" value="Sign Up">
+        </form>
+
+        <footer>
+            <p><span>Copyright </span> The Code Review</p>
+        </footer>
+        
+    </div> <!-- END container-->
+    
+</body>
+</html>
